@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> </title>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <style>
+        p.header_title {
+            font-family: Tangerine, cursive, sans-serif;
+            color: black;
+            font-size: 60px;
+            font-weight: bold;
+            padding: 0px;
+        }
+
+        a.header_intro {
+            font-family: Courier, serif, sans-serif;
+            color: black;
+            font-size: 36px;
+            padding: 10px;
+        }
+
+        p.footer {
+            font-family: Verdana, serif, sans-serif;
+            color: black;
+        }
+    </style>
+    <link ref="stylesheet" src="style.css">
+</head>
+
+<body>
+
+    <container>
+        <center>
+            <p id="correct"></p>
+            <contents>
+                
+                <form>
+                    <label for="fullName">Name</label>
+                    <input type="text" id="fullName" name="fullName" size="25" />
+                    <br />
+
+                    <div class="input-group">
+                        <label for="feedback">What color is the combination of red and yellow?</label>
+                        <br />
+                        <input type="radio" id="color1" name="colorChoices" value="Orange">
+                        <label for="color1">Orange</label>
+                        <br />
+                        <input type="radio" id="color2" name="colorChoices" value="Red">
+                        <label for="color2">Red</label>
+                        <br />
+                        <input type="radio" id="color3" name="colorChoices" value="Green">
+                        <label for="color3">Green</label>
+                        <br />
+                        <input type="radio" id="color4" name="colorChoices" value="Purple">
+                        <label for="color4">Purple</label>
+                    </div>
+                    <div id="answer"></div>
+                    <div id="answer_result_1"></div>
+
+            </contents>
+
+            <br/>
+            <div class="input-group">
+                <label for="feedback">What is the highest degree obtained by my dad?</label>
+                <br />
+                <input type="radio" id="item1" name="degreeChoices" value="High School">
+                <label for="item1">High School Diploma</label>
+                <br />
+                <input type="radio" id="item2" name="degreeChoices" value="associates">
+                <label for="item2">Associates</label>
+                <br />
+                <input type="radio" id="item3" name="degreeChoices" value="Bachelors">
+                <label for="item3">Bachelors</label>
+                <br />
+                <input type="radio" id="item4" name="degreeChoices" value="masters">
+                <label for="item4">Masters</label>
+            </div>
+            <div id="answer2"></div>
+
+            <br/>
+            <div class="input-group">
+                <label for="feedback">What console was released in 2001 by Nintendo?</label>
+                <br />
+                <input type="radio" id="game1" name="gameChoice" value="PS1">
+                <label for="game1">PS1</label>
+                <br />
+                <input type="radio" id="game2" name="gameChoice" value="Gamecube">
+                <label for="game2">Gamecube</label>
+                <br />
+                <input type="radio" id="game3" name="gameChoice" value="PS2">
+                <label for="game3">PS2</label>
+                <br />
+                <input type="radio" id="game4" name="gameChoice" value="Nintendo64">
+                <label for="game4">Nintendo 64</label>
+            </div>
+            <div id="answer3"></div>
+
+            <br/>
+            <div class="input-group">
+                <label for="feedback">Finish the quote: You need some Little Caesars pizza, I be </label>
+                <br />
+                <input type="radio" id="pizza1" name="pizzaChoice" value="cheesy">
+                <label for="pizza1">Hot and cheesy</label>
+                <br />
+                <input type="radio" id="pizza2" name="pizzaChoice" value="rome">
+                <label for="pizza2">The leader of Rome</label>
+                <br />
+                <input type="radio" id="pizza3" name="pizzaChoice" value="fatal">
+                <label for="pizza3">Fatally stabbed</label>
+                <br />
+                <input type="radio" id="pizza4" name="pizzaChoice" value="Hot and ready">
+                <label for="pizza4">Hot and ready</label>
+            </div>
+            <div id="answer4"></div>
+
+            <br/>
+            <div class="input-group">
+                <label for="feedback">What animated movie was directed by Hayao Miyazaki in 2013?</label>
+                <br />
+                <input type="radio" id="movie1" name="movieChoice" value="Spirited Away">
+                <label for="movie1">Spirited Away</label>
+                <br />
+                <input type="radio" id="movie2" name="movieChoice" value="The Wind Rises">
+                <label for="movie2">The Wind Rises</label>
+                <br />
+                <input type="radio" id="movie3" name="movieChoice" value="Princess Mononoke">
+                <label for="movie3">Princess Mononoke</label>
+                <br />
+                <input type="radio" id="movie4" name="movieChoice" value="Ponyo">
+                <label for="movie4">Ponyo</label>
+            </div>
+            <div id="answer5"></div>
+
+            <br/>
+            <div class="input-group">
+                <label for="feedback">What camera setting controls depth of focus?</label>
+                <br />
+                <input type="radio" id="camera1" name="cameraChoice" value="Shutter Speed">
+                <label for="camera1">Shutter Speed</label>
+                <br />
+                <input type="radio" id="camera2" name="cameraChoice" value="Exposure">
+                <label for="camera2">Exposure</label>
+                <br />
+                <input type="radio" id="camera3" name="cameraChoice" value="Tripod">
+                <label for="camera3">Tripod</label>
+                <br />
+                <input type="radio" id="camera4" name="cameraChoice" value="Aperture">
+                <label for="camera4">Aperture</label>
+            </div>
+            <div id="answer6"></div>
+
+            <div>
+                <button class="check">Check</button>
+            </div>
+            </form>
+        </center>
+    </container>
+
+    <contents>
+
+        <div id="answer_result_2"></div>
+        <div id="answer_result_3"></div>
+        <div id="answer_result_4"></div>
+        <div id="answer_result_5"></div>
+        <div id="answer_result_6"></div>
+    </contents>
+
+
+
+    <script type="text/javascript">
+        var correctname = "Bachelors";
+        var correct_color = "Orange";
+        var correct_game = "Gamecube";
+        var correct_pizza = "Hot and ready";
+        var correct_movie = "The Wind Rises";
+        var correct_camera = "Aperture";
+        var correct_total = 0;
+        $(function() {
+            $("button.check").on("click", function(e) {
+                var guessedRadio = $('input[name=\'degreeChoices\']:checked');
+                var guessedName = $('input[name=\'degreeChoices\']:checked').val();
+                var guessedColor = $('input[name=\'colorChoices\']:checked').val();
+                var guessedGame = $('input[name=\'gameChoice\']:checked').val();
+                var guessedPizza = $('input[name=\'pizzaChoice\']:checked').val();
+                var guessedMovie = $('input[name=\'movieChoice\']:checked').val();
+                var guessedCamera = $('input[name=\'cameraChoice\']:checked').val();
+                var guessedNAME = guessedRadio.val();
+                var guessedId = guessedRadio.attr("id");
+                var guessedLabel = $("label[for='" + guessedId + "']").html();
+
+                console.log("guessedName: ", guessedName);
+                if (guessedColor == correct_color) {
+                    $("#answer").html("Correct!").css("color", "green");
+                    correct_total++;
+                    $("answer_result_1").html("kkkkkk").css("color", "green");
+                }
+                else {
+                    $("#answer").html("Wrong!").css("color", "red");
+                }
+
+                if (guessedName == correctname) {
+                    $("#answer2").html("Correct!").css("color", "green");
+                    correct_total++;
+                }
+                else {
+                    $("#answer2").html("Wrong!").css("color", "red");
+                }
+
+                if (guessedGame == correct_game) {
+                    $("#answer3").html("Correct!").css("color", "green");
+                    correct_total++;
+                }
+                else {
+                    $("#answer3").html("Wrong!").css("color", "red");
+                }
+
+                if (guessedPizza == correct_pizza) {
+                    $("#answer4").html("Correct!").css("color", "green");
+                    correct_total++;
+                }
+                else {
+                    $("#answer4").html("Wrong!").css("color", "red");
+                }
+
+                if (guessedMovie == correct_movie) {
+                    $("#answer5").html("Correct!").css("color", "green");
+                    correct_total++;
+                    $("#movie2").css("color", "green");
+                }
+                else {
+                    $("#answer5").html("Wrong!").css("color", "red");
+                }
+
+                if (guessedCamera == correct_camera) {
+                    $("#answer6").html("Correct!").css("color", "green");
+                    correct_total++;
+                    $("#movie2").css("color", "green");
+                }
+                else {
+                    $("#answer6").html("Wrong!").css("color", "red");
+                }
+
+                $("#correct").html("Total Correct: " + correct_total);
+            });
+
+
+
+        });
+    </script>
+</body>
+
+</html>

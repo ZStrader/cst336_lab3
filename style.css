@@ -1,0 +1,40 @@
+container {
+    display: -webkit-flex;
+    display: flex;
+}
+
+right {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background-color: #123;
+    padding: 10px;
+}
+
+left {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background-color: #1f1f1f;
+    padding: 10px;
+}
+
+center {
+    alignment-baseline: central;
+}
+
+contents {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background-color: #1f1f1f;
+    padding: 10px;
+}
+
+curv_font {
+    font-family: Tangerine, cursive, sans-serif;
+    color: black;
+    font-size: 60px;
+    font-weight: bold;
+    padding: 0px;
+}
